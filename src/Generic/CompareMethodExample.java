@@ -1,21 +1,28 @@
 package Generic;
 
 public class CompareMethodExample {
-    public static void main(String[] args){
-        Pair<String, Integer> p1 = new Pair<String, Integer>("key1", 100);
-        Pair<String, Integer> p2 = new Pair<String, Integer>("key1", 100);
 
-        boolean result1 = Util.<String, Integer>compare(p1, p2);
-        if (result1){
-            System.out.println("p1, p2 equal");
+    public static void main(String[] args){
+        Pair<Integer, String> p1 = new Pair<Integer, String>(10, "test1");
+        Pair<Integer, String> p2 = new Pair<Integer, String>(11, "test1");
+
+        boolean pairCompare = Util.<Integer, String>compare(p1, p2);
+
+        if (pairCompare){
+            System.out.println("equals");
+        }else {
+            System.out.println("doesn't equal");
         }
 
-        Pair<String, Integer> p3 = new Pair<String, Integer>("ttt", 120);
-        Pair<String, Integer> p4 = new Pair<String, Integer>("t3", 120);
+        Pair<String, Integer> p3 = new Pair<String, Integer>("test1", 10);
+        Pair<String, Integer> p4 = new Pair<String, Integer>("test1", 10);
 
-        boolean result2 = Util.<String, Integer>compare(p3, p4);
+        boolean pairCompare2 = Util.<String, Integer>compare(p3, p4);
 
-        if (result2) System.out.println("p3, p4 equal");
-
+        if (pairCompare2){
+            System.out.println("equals");
+        }else {
+            System.out.println("doesn't equal");
+        }
     }
 }
