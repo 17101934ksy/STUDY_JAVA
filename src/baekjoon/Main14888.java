@@ -6,67 +6,54 @@ import java.util.StringTokenizer;
 
 public class Main14888 {
 
+    static int MAX = Integer.MIN_VALUE;
+    static int MIN = Integer.MAX_VALUE;
     static int N;
-    static Long result;
-
-    static long maxResult, minResult;
-    static long[] arr;
+    static int[] arr;
     static int[] operator = new int[4];
 
     public static void main(String[] args) throws IOException {
 
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-
         N = Integer.parseInt(bf.readLine());
-        arr = new long[N];
+        arr = new int[N];
 
         StringTokenizer st = new StringTokenizer(bf.readLine());
-        for (int i = 0; i < st.countTokens(); i++) {
+        for (int i = 0; i < N; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
         }
 
         st = new StringTokenizer(bf.readLine());
-        for (int i = 0; i < operator.length; i++) {
+        for (int i = 0; i < 4; i++) {
             operator[i] = Integer.parseInt(st.nextToken());
         }
 
-        result = arr[0];
-
-        doOperator(result, 0);
-        System.out.println(maxResult);
-//        System.out.println(minResult);
+        dfs(arr[0], 1);
+        System.out.println(MAX);
+        System.out.print(MIN);
 
     }
 
-    public static void doOperator(Long result, int depth) {
+    private static void dfs(int num, int idx) {
 
-        if (depth == N) {
-
-            if (result > maxResult) {
-                maxResult = result;
-            } else if (result < minResult) {
-                minResult = result;
-            }
+        if (idx == N) {
+            MAX = Math.max(MAX, num);
+            MIN = Math.min(MIN, num);
             return ;
         }
 
-        for (int i = 0; i < operator.length; i++) {
+        for (int i = 0; i < 4; i++) {
+            if (operator[i] > 0) {
+                operator[i]--;
 
-            for (int j = 0; j < operator[i]; j++) {
-
-                if (i == 0) {
-                    result = result + arr[depth+1];
-                } else if (i == 1) {
-                    result = result - arr[depth+1];
-                } else if (i == 2) {
-                    result = result * arr[depth+1];
-                } else {
-                    result = result / arr[depth+1];
+                switch (i) {
+                    case 0: dfs(num + arr[idx], idx + 1); break;
+                    case 1: dfs(num - arr[idx], idx + 1); break;
+                    case 2: dfs(num * arr[idx], idx + 1); break;
+                    case 3: dfs(num / arr[idx], idx + 1); break;
                 }
-
-                doOperator(result, depth + 1);
+                operator[i]++;
             }
         }
     }
-
 }

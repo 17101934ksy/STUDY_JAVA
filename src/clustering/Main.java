@@ -8,7 +8,7 @@
 //
 //import static java.lang.Integer.parseInt;
 //
-//public class Main {
+//public class Main10844 {
 //
 //    static int n;
 //    static int k;
