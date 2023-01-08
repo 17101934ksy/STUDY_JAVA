@@ -1,80 +1,63 @@
 package dp1;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 import java.util.StringTokenizer;
+import java.util.Arrays;
+import java.util.Comparator;
 
 public class Main {
 
-    static int N;
-    static int[] arr;
+    static int n;
+    static int[] dp;
+    static int[][] link;
 
     public static void main(String[] args) throws IOException {
 
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-        N = Integer.parseInt(bf.readLine());
-        arr = new int[N + 1];
+        n = Integer.parseInt(bf.readLine());
+        dp = new int[n + 1];
+        link = new int[n + 1][2];
 
-        StringTokenizer st = new StringTokenizer(bf.readLine());
-        for (int i = 1; i <= N; i++) {
-            arr[i] = Integer.parseInt(st.nextToken());
+        StringTokenizer st;
+        for (int i = 1; i < n + 1; i++) {
+            st = new StringTokenizer(bf.readLine());
+            link[i][0] = Integer.parseInt(st.nextToken());
+            link[i][1] = Integer.parseInt(st.nextToken());
         }
 
-        int result = calculateArrayLength();
+        Arrays.sort(link, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                return o1[0] - o2[0];
+            }
+        });
+
+        int result = calculateLIS();
         System.out.print(result);
+
     }
 
-    static int calculateArrayLength() {
+    static int calculateLIS() {
 
-        int[] LisDp = new int[N + 1];
-        int[] LdsDp = new int[N + 1];
-
-        // 순행
-        calculateLIS(LisDp);
-
-        // 역행
-        calculateLDS(LdsDp);
-
-        // 결과
         int result = 0;
-        for (int i = 1; i <= N; i++) {
-            result = Math.max(LisDp[i] + LdsDp[i] - 1, result);
+
+        for (int i = 1; i <= n; i++) {
+            dp[i] = 1;
         }
 
-        return result;
-
-    }
-
-    static void calculateLIS(int[] LisDp) {
-
-        for (int i = 1; i <= N; i++) {
-            LisDp[i] = 1;
+        for (int i = 1; i <= n; i++) {
 
             for (int j = 1; j < i; j++) {
 
-                if (arr[j] < arr[i] && LisDp[i] <= LisDp[j]) {
-                    LisDp[i] = LisDp[j] + 1;
+                if (link[i][1] > link[j][1]) {
+                    dp[i] = Math.max(dp[i], dp[j] + 1);
                 }
-
             }
+
+            result = Math.max(result, dp[i]);
         }
 
-    }
-
-    static void calculateLDS(int[] LdsDp) {
-
-        for (int i = N; i >= 1; i--) {
-            LdsDp[i] = 1;
-
-            for (int j = N; j > i; j--) {
-
-                if (arr[j] < arr[i] && LdsDp[i] <= LdsDp[j]) {
-                    LdsDp[i] = LdsDp[j] + 1;
-                }
-
-            }
-        }
-
+        return n - result;
     }
 }
