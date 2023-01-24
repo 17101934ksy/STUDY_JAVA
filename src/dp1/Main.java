@@ -1,63 +1,41 @@
 package dp1;
 import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.io.IOException;
-import java.util.StringTokenizer;
-import java.util.Arrays;
-import java.util.Comparator;
+import java.io.InputStreamReader;
 
 public class Main {
-
-    static int n;
-    static int[] dp;
-    static int[][] link;
 
     public static void main(String[] args) throws IOException {
 
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-        n = Integer.parseInt(bf.readLine());
-        dp = new int[n + 1];
-        link = new int[n + 1][2];
+        String s1 = bf.readLine();
+        String s2 = bf.readLine();
 
-        StringTokenizer st;
-        for (int i = 1; i < n + 1; i++) {
-            st = new StringTokenizer(bf.readLine());
-            link[i][0] = Integer.parseInt(st.nextToken());
-            link[i][1] = Integer.parseInt(st.nextToken());
-        }
-
-        Arrays.sort(link, new Comparator<int[]>() {
-            @Override
-            public int compare(int[] o1, int[] o2) {
-                return o1[0] - o2[0];
-            }
-        });
-
-        int result = calculateLIS();
+        int result = calculateLCS(s1, s2);
         System.out.print(result);
-
     }
 
-    static int calculateLIS() {
-
+    private static int calculateLCS(String s1, String s2) {
+        int[][] dpArr = new int[s1.length()][s2.length()];
         int result = 0;
 
-        for (int i = 1; i <= n; i++) {
-            dp[i] = 1;
-        }
-
-        for (int i = 1; i <= n; i++) {
-
-            for (int j = 1; j < i; j++) {
-
-                if (link[i][1] > link[j][1]) {
-                    dp[i] = Math.max(dp[i], dp[j] + 1);
-                }
+        for (int j = 0; j < s2.length(); j++) {
+            if (s1.charAt(0) == s2.charAt(j)) {
+                dpArr[0][j] += 1;
             }
-
-            result = Math.max(result, dp[i]);
         }
 
-        return n - result;
+        for (int i = 1; i < s1.length(); i++) {
+            for (int j = 0; j < s2.length(); j++) {
+
+                if (s1.charAt(i) == s2.charAt(j)) {
+                    dpArr[i][j] = Math.max(dpArr[i - 1][j] , dpArr[i][j] + 1);
+                }
+
+                result = Math.max(dpArr[i][j], result);
+            }
+        }
+
+        return result;
     }
 }
