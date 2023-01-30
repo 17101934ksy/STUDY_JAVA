@@ -37,6 +37,7 @@ public class Main14888 {
     private static void dfs(int num, int idx) {
 
         if (idx == N) {
+
             MAX = Math.max(MAX, num);
             MIN = Math.min(MIN, num);
             return ;
