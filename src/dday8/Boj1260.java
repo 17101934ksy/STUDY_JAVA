@@ -13,7 +13,7 @@ import java.util.StringTokenizer;
 
 import static java.lang.Integer.parseInt;
 
-public class Main {
+public class Boj1260 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
