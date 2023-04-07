@@ -1,4 +1,4 @@
-package dday7;
+package dday7.boj7562;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
