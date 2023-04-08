@@ -1,5 +1,4 @@
 package dday6.boj2206;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
@@ -43,6 +42,7 @@ class BrickMap {
     static final int[] D_X = {1, 0, -1, 0};
     static final int[] D_Y = {0, 1, 0, -1};
 
+    int zeroNum;
     Road[][] roads;
     List<Road> possibleBrickRoad = new ArrayList<>();
 
@@ -67,11 +67,19 @@ class BrickMap {
 
     void addRoad(int x, int y, int num) {
         roads[x][y] = new Road(x, y, num);
-        if (num == 1) possibleBrickRoad.add(roads[x][y]);
+        if (num == 0) zeroNum++;
+        else if (num == 1) possibleBrickRoad.add(roads[x][y]);
     }
 
 
     int findRoadCnt() {
+
+        boolean init = false;
+
+        if (zeroNum < roads.length + roads[0].length - 2) {
+            return -1;
+        }
+
         Queue<Road> queue = new ArrayDeque<>();
         List<Integer> cnts = new ArrayList<>();
 
@@ -81,15 +89,21 @@ class BrickMap {
 
         if (!possibleBrickRoad.isEmpty()) {
             for (Road r : possibleBrickRoad) {
-                queue = new ArrayDeque<>();
-                setInit();
 
-                r.num = 0;
-                roads[0][0].visited = true;
+                if (!init) setInit();
+                if (isPossibleShortRoad(r)) {
+                    queue = new ArrayDeque<>();
 
-                queue.add(roads[0][0]);
-                cnts.add(bfs(queue));
-                r.num = 1;
+                    r.num = 0;
+                    roads[0][0].visited = true;
+
+                    queue.add(roads[0][0]);
+                    cnts.add(bfs(queue));
+                    r.num = 1;
+                    init = false;
+                } else {
+                    init = true;
+                }
             }
         }
 
@@ -146,5 +160,17 @@ class BrickMap {
 
     boolean checkBreak(int x, int y) {
         return x == roads.length - 1 && y == roads[0].length - 1;
+    }
+
+    boolean isPossibleShortRoad(Road road) {
+        int cnt = 0;
+        for (int k = 0; k < D_X.length; k++) {
+            int newX = road.x + D_X[k];
+            int newY = road.y + D_Y[k];
+
+            if (validRange(newX, newY)) cnt++;
+        }
+
+        return cnt >= 2;
     }
 }
