@@ -17,139 +17,134 @@ public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
-        
+
         int n = getInt(st);
         int m = getInt(st);
-        
+
         BrickMap map = new BrickMap(n, m);
-        
+
         for (int i = 0; i < n; i++) {
-            st = new StringTokenizer(br.readLine());
+            String str = br.readLine();
             for (int j = 0; j < m; j++) {
-                map.addRoad(i, j , getInt(st));                
+                map.addRoad(i, j , Character.getNumericValue(str.charAt(j)));
             }
         }
-        
+
         System.out.println(map.findRoadCnt());
     }
-    
+
     static int getInt(StringTokenizer st) {
         return parseInt(st.nextToken());
     }
 }
 
 class BrickMap {
-    
+
     static final int[] D_X = {1, 0, -1, 0};
     static final int[] D_Y = {0, 1, 0, -1};
-    
+
     Road[][] roads;
     List<Road> possibleBrickRoad = new ArrayList<>();
-    
+
     class Road {
         int x;
         int y;
         int step = 1;
         int num;
         boolean visited;
-    
+
         Road(int x, int y, int num) {
             this.x = x;
             this.y = y;
             this.num = num;
         }
-    
+
     }
-    
+
     BrickMap(int n, int m) {
         roads = new Road[n][m];
     }
-    
+
     void addRoad(int x, int y, int num) {
         roads[x][y] = new Road(x, y, num);
         if (num == 1) possibleBrickRoad.add(roads[x][y]);
     }
-    
-    
-    int findRoadCnt() {        
+
+
+    int findRoadCnt() {
         Queue<Road> queue = new ArrayDeque<>();
         List<Integer> cnts = new ArrayList<>();
-        
+
         roads[0][0].visited = true;
         queue.add(roads[0][0]);
         cnts.add(bfs(queue));
-        
+
         if (!possibleBrickRoad.isEmpty()) {
             for (Road r : possibleBrickRoad) {
                 queue = new ArrayDeque<>();
                 setInit();
-                
-                r.num = 0;                
-                r.visited = true;
 
-                queue.add(r);
+                r.num = 0;
+                roads[0][0].visited = true;
+
+                queue.add(roads[0][0]);
                 cnts.add(bfs(queue));
-                r.num = 1;                
+                r.num = 1;
             }
         }
 
         Collections.sort(cnts);
         for (Integer c : cnts) {
-            if (c != -1) 
+            if (c != -1)
                 return c;
         }
-        
+
         return -1;
     }
-    
+
     void setInit() {
         for (int i = 0; i < roads.length; i++)
             for (int j = 0; j < roads[0].length; j++)
                 roads[i][j].visited = false;
     }
-    
+
     int bfs(Queue<Road> queue) {
         while(!queue.isEmpty()) {
-            Road road = queue.poll();    
-            
+            Road road = queue.poll();
+
             if (checkBreak(road.x, road.y)) {
-                return road.step;               
+                return road.step;
             }
-            
+
             for (int k = 0; k < D_X.length; k++) {
                 int newX = road.x + D_X[k];
                 int newY = road.y + D_Y[k];
-                
+
                 if (validRange(newX, newY)) {
+
                     roads[newX][newY].step = road.step + 1;
                     roads[newX][newY].visited = true;
                     queue.add(roads[newX][newY]);
-                    
+
                     if (checkBreak(newX, newY)) {
                         return roads[newX][newY].step;
                     }
-                    
+
                 }
             }
         }
-        
+
         return -1;
-        
+
     }
-    
+
     boolean validRange(int x, int y) {
         return x >= 0 && y >= 0 &&
-            x < roads.length && y < roads[0].length &&
-            !roads[x][y].visited && roads[x][y].num != 1;
+                x < roads.length && y < roads[0].length &&
+                !roads[x][y].visited && roads[x][y].num != 1;
     }
-    
+
     boolean checkBreak(int x, int y) {
         return x == roads.length - 1 && y == roads[0].length - 1;
     }
-    
-    
-    
-    
-    
-    
 }
