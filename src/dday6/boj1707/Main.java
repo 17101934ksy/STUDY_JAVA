@@ -76,6 +76,7 @@ class Graph {
             queue.add(nodes[i]);
             if (!bfs(queue)) return false;
         }
+
         return true;
     }
 
