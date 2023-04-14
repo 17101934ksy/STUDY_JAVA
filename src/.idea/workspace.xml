@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="915b0e63-908b-485f-99c7-66d7b863b3c9" name="변경" comment="Dfs, Bfs Boj">
+      <change afterPath="$PROJECT_DIR$/dday5/boj_1504/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/aws.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dday6/boj1707/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/dday6/boj1707/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test3/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test3/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test3/Test3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test3/test3.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HD74cO1oIaM4VEDZhg6rmCqHT2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "/home/koseyun/projects/spring/algorithm",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "프로젝트",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editor.preferences.completion"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="lambda" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dday8" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="jobscheduling" />
+    </key>
+  </component>
+  <component name="RunManager" selected="애플리케이션.dday5.boj_1504.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dday6.boj2206_3.Main" />
+      <module name="tutorial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dday6.boj2206_3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dday5.boj_1504.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dday5.boj_1504.Main" />
+      <module name="tutorial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dday5.boj_1504.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dday6.boj1707.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dday6.boj1707.Main" />
+      <module name="tutorial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dday6.boj1707.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dday6.boj1753_2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dday6.boj1753_2.Main" />
+      <module name="tutorial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dday6.boj1753_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dday6.boj1753.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dday6.boj1753.Main" />
+      <module name="tutorial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dday6.boj1753.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="애플리케이션.dday5.boj_1504.Main" />
+        <item itemvalue="애플리케이션.dday6.boj1753_2.Main" />
+        <item itemvalue="애플리케이션.dday6.boj1753.Main" />
+        <item itemvalue="애플리케이션.dday6.boj1707.Main" />
+        <item itemvalue="애플리케이션.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="915b0e63-908b-485f-99c7-66d7b863b3c9" name="변경" comment="" />
+      <created>1667807609780</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667807609780</updated>
+      <workItem from="1667807610948" duration="6472000" />
+      <workItem from="1667818008103" duration="660000" />
+      <workItem from="1667884714890" duration="11474000" />
+      <workItem from="1668495358904" duration="5281000" />
+      <workItem from="1668504380738" duration="223000" />
+      <workItem from="1669100587170" duration="5350000" />
+      <workItem from="1669699028166" duration="4585000" />
+      <workItem from="1669825570236" duration="858000" />
+      <workItem from="1669854198546" duration="204000" />
+      <workItem from="1669876754561" duration="20000" />
+      <workItem from="1670328777716" duration="529000" />
+      <workItem from="1671068511016" duration="1592000" />
+      <workItem from="1671102723315" duration="394000" />
+      <workItem from="1672373638135" duration="1505000" />
+      <workItem from="1672382479206" duration="7226000" />
+      <workItem from="1672573903684" duration="18000" />
+      <workItem from="1674780815973" duration="9222000" />
+      <workItem from="1674796730691" duration="292000" />
+      <workItem from="1674797038816" duration="82000" />
+      <workItem from="1675075337953" duration="55000" />
+      <workItem from="1675075523067" duration="3410000" />
+      <workItem from="1675078949552" duration="1403000" />
+      <workItem from="1675095067942" duration="2821000" />
+      <workItem from="1675125724710" duration="610000" />
+      <workItem from="1675261424628" duration="1615000" />
+      <workItem from="1675734263281" duration="15078000" />
+      <workItem from="1675762700332" duration="107000" />
+      <workItem from="1677808328811" duration="186000" />
+      <workItem from="1680620654618" duration="761000" />
+      <workItem from="1680625156855" duration="4714000" />
+      <workItem from="1680633988749" duration="665000" />
+      <workItem from="1680663442120" duration="1373000" />
+      <workItem from="1680667518537" duration="1633000" />
+      <workItem from="1680678366394" duration="2208000" />
+      <workItem from="1680683823064" duration="7579000" />
+      <workItem from="1680707498476" duration="4712000" />
+      <workItem from="1680766867334" duration="12599000" />
+      <workItem from="1680787097838" duration="10614000" />
+      <workItem from="1680813510107" duration="2882000" />
+      <workItem from="1680849748094" duration="28072000" />
+      <workItem from="1680941346667" duration="6394000" />
+      <workItem from="1680951875330" duration="7510000" />
+      <workItem from="1681042865450" duration="636000" />
+      <workItem from="1681108154930" duration="2271000" />
+      <workItem from="1681119506314" duration="1195000" />
+      <workItem from="1681137764195" duration="599000" />
+      <workItem from="1681151573499" duration="3438000" />
+      <workItem from="1681170580876" duration="1756000" />
+      <workItem from="1681172355046" duration="42000" />
+      <workItem from="1681172428571" duration="12000" />
+      <workItem from="1681172472501" duration="215000" />
+    </task>
+    <task id="LOCAL-00001" summary="DP Boj">
+      <created>1680634027384</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680634027384</updated>
+    </task>
+    <task id="LOCAL-00002" summary="DP Boj">
+      <created>1680634461858</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680634461858</updated>
+    </task>
+    <task id="LOCAL-00003" summary="DP Boj">
+      <created>1680707657736</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680707657737</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Dfs, Stack Boj">
+      <created>1680777473544</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680777473544</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Dfs, Bfs Boj">
+      <created>1680792909287</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680792909287</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Dfs, Bfs Boj">
+      <created>1680814215769</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680814215769</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Dfs, Bfs Boj">
+      <created>1680865881692</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680865881692</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Dfs, Bfs Boj">
+      <created>1680875106748</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680875106748</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Dfs, Bfs Boj">
+      <created>1680941450906</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1680941450906</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Dfs, Bfs Boj">
+      <created>1680942364968</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1680942364968</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Dfs, Bfs Boj">
+      <created>1680955537666</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1680955537666</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Dfs, Bfs Boj">
+      <created>1681042886496</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1681042886496</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="DP Boj" />
+    <MESSAGE value="Dfs, Stack Boj" />
+    <MESSAGE value="Dfs, Bfs Boj" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dfs, Bfs Boj" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/day9/Boj2606.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/day9/Boj2606.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/day9/Boj2606.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/day9/Boj2606.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/day9/Boj2606.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/day9/Boj2606.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/day9/Boj2606.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/day9/Boj2606.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
