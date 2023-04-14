@@ -37,6 +37,9 @@ class Sequence {
         trace = new int[n + 1];
     }
 
+
+
+
     void add(int i, int n) {
         sq[i] = n;
     }
@@ -67,7 +70,6 @@ class Sequence {
             }
         }
 
-
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         bw.write(ans + "\n");
         while( !stack.isEmpty()) {
@@ -77,6 +79,7 @@ class Sequence {
         bw.close();
     }
 }
+
 
 //x 10 20 5 8 7 9 15 17 20
 // n + 1 = length 8
