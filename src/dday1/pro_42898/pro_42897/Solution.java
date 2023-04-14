@@ -1,5 +1,8 @@
 package dday1.pro_42898.pro_42897;
 
+import java.util.Date;
+import java.util.Stack;
+
 // 6: 25
 class Solution {
  
@@ -17,7 +20,6 @@ class Solution {
             dp1[i] = Math.max(dp1[i - 1], dp1[i - 2] + money[i]);
             dp2[i] = Math.max(dp2[i - 1], dp2[i - 2] + money[i]);
         }
-        
         return Math.max(dp1[len - 2], dp2[len - 1]);
     }
 }
