@@ -5,25 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="915b0e63-908b-485f-99c7-66d7b863b3c9" name="변경" comment="Dfs, Bfs Boj">
-      <change afterPath="$PROJECT_DIR$/dday5/boj_1504/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/aws.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dday6/boj1707/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/dday6/boj1707/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test3/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test3/.idea/jpa-buddy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test3/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test3/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test3/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test3/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test3/Test3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test3/test3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,6 +203,7 @@
       <workItem from="1681172355046" duration="42000" />
       <workItem from="1681172428571" duration="12000" />
       <workItem from="1681172472501" duration="215000" />
+      <workItem from="1682394395874" duration="9000" />
     </task>
     <task id="LOCAL-00001" summary="DP Boj">
       <created>1680634027384</created>
